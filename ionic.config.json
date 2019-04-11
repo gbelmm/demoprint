@@ -1,0 +1,7 @@
+{
+  "name": "demoprint",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

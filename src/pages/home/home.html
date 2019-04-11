@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<ion-list inset>
+  <button ion-item *ngFor="let item of deviceprinter" (click)="connect(item.address)">
+  ({{$index}}) {{ item.name }} -  {{ item.address }}
+  </button>
+</ion-list>
+
+
+  <button ion-button secondary (click)="testPrint()">Test Print</button>
+</ion-content>
